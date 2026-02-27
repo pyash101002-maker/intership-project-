@@ -1,0 +1,228 @@
+
+        body{
+            margin: 0;
+        }
+        ul{
+            list-style-type: none;
+            background-color: rgb(0, 0, 0);
+            margin: 0px;
+            padding: 15px;
+            padding-bottom: 40px;
+        }
+        #rightmanu{
+            color: white;
+            float: right;
+            padding: 0%;
+            display: none;
+        }
+        li span{
+            display: inline-block;
+
+        }
+        li a{
+            color: white;
+            font-size: large;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        #right{
+            float: right;
+        }
+        #left{
+            float: left;
+        }
+
+        .img{
+            height: 740px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-image: url(image.jfif); 
+            background-size: cover;
+            /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(image.jfif); */
+        }
+       /* .inner{
+            width: 100%;
+            height: 740px ;
+            background: rgb(192, 167, 167);
+       } */
+        .inner h1{
+            color: rgb(255, 251, 251);
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            text-transform: uppercase;
+            padding-top: 200px;
+            padding-bottom: 50px;
+            font-size: 70px;  
+            text-align: center;
+        }
+        .sercharea{
+            display: flex;
+            justify-content: center;
+            border: 0px solid lightgray;
+            height:  44px;
+            width: 75vw;
+            margin: 0 auto;
+            margin-top:40px;
+            max-width: 560px;
+            background-color: white;
+            padding-right: 0;
+        }
+        #searchber{
+            flex: 1;
+            border: none;
+            outline: none;    
+            padding: 10px 20px; 
+            font-size: large;       
+        }  
+        span{
+            color: rgb(0, 0, 0);
+            padding-top: 10px;  
+            padding-left: 15px;
+        }
+        ::placeholder{
+            padding: 10px;
+            font-size: 20px;
+        }
+        .search_button{
+            height: 45px;
+            width: 80px;
+            background-color: rgba(255, 0, 0, 0.685); 
+            color: white ;
+            border: 0ch;
+        }
+        .alcohol_section{
+            margin: 50px;
+        }
+        .alcohol_types{
+            display:grid;   
+            grid-template-columns: auto auto auto auto auto; 
+            column-gap: 50px;  
+            /* display: flex;
+            flex-wrap: wrap; */
+            justify-content: center;  
+            text-align: center;
+            /* padding: 30px; */
+        }
+        .alcohol_types p{
+            font-size: 20px;
+            color: black;
+            text-transform: uppercase;
+            margin: 0;
+            text-decoration: none;
+        }
+        .text{
+            text-decoration: none;
+        }
+        .alcohol_types img{
+            height: 150px;
+            width: 150px;
+            padding: 0;
+            margin: 0;
+            transition: 1s;
+        }
+        .alcohol_types img:hover{
+            height: 140px;
+            width: 140px;
+        }
+        .beer, .wine, .whiskey, .tequila, .vodka, .rum, .cognac, .branby, .extras, .gin {
+            margin-bottom: 35px;
+            padding: 20px;
+            padding-left: 40px;
+            padding-right: 45px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .how_it_work{
+            background-color: lightgray;
+            padding-top:2.5rem ;
+            padding-bottom: 2.5rem;
+        }
+        .hader_row{
+                text-transform: uppercase;
+                margin-bottom: 14px;
+                display: flex;
+                justify-content: center;
+        }
+        .main_center{
+                display: flex;
+                justify-content: center;
+                /* text-align: center; */
+                padding: 10px;
+                /* flex-wrap: wrap; */
+            }
+        .part1, .part2, .part3{
+                text-align: center;
+                flex-shrink: 1;
+                padding: 10px;
+        }
+        .faq{
+            height: 500px;
+            padding: 20px;
+            text-align: center;
+        }
+        .faq h2 {
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; */
+            font-size: 60px;
+        }
+        .faq details{
+            padding: 10px;
+        }
+        .faq summary{
+            font-size: 40px;
+        }
+        .faq p{
+            font-size: 20px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        @media screen and (max-width:1300px)
+        {
+            body{
+                width: 100%;
+            }
+            .NavigationBar #left{
+                display: none;
+            }
+            .inner h1{
+                font-size: 40px;
+            }
+            .sercharea{
+                display: flex;
+                justify-content: center;
+                height:  44px;
+                width: 100%px;
+                
+            }
+            #searchber{
+                flex: 1;
+                border: none;
+                outline: none;    
+                padding: 0px ; 
+                font-size: large;       
+            }  
+            .alcohol_section{
+            margin: 0px;
+            }
+            .alcohol_types{
+               
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;  
+                text-align: center;
+            }
+            .main_center{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .faq summary{
+            font-size: 30px;
+            }
+            .faq p{
+                font-size: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+           
+        }
